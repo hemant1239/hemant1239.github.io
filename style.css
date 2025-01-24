@@ -48,18 +48,22 @@ section div div {
 /* Resume Container */
 .resume-container {
   display: flex;
-  max-width: 1100px;
-  margin: 20px auto;
+  /*max-width: 1100px;
+   margin: 20px auto; */
   background: white;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  flex-wrap: nowrap;
+  margin: 0px auto;
+  max-width: 1200px;
+  /* padding: 20px; */
 }
 
 /* Left Column */
 .left-column {
-  flex: 2;
+  flex: 3;
   padding: 20px;
   border-right: 1px solid #ddd;
 }
@@ -101,6 +105,17 @@ section div div {
   padding: 20px;
   background: #f4f4f4;
   position: relative;
+  border-left: 2px solid #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .right-column {
+    border-left: none;
+    border-top: 2px solid #e9ecef;
+  }
 }
 
 .right-column h3 {
