@@ -15,7 +15,7 @@ function updateExperienceCounter(startDate) {
 
     // Update the counter dynamically
     const counterElement = document.getElementById("experience-counter");
-    counterElement.textContent = decimalYears.toFixed(1) + " years";
+    counterElement.textContent = decimalYears.toFixed(1);
 }
 
 updateExperienceCounter("2015-01-19");
